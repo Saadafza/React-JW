@@ -14,6 +14,7 @@ function Home() {
     axios.get("https://studentapi-tawny.vercel.app/api/students").then((res) => {
       if (res.data.status == true) {
         setStudents(res.data.students);
+        console.log(students)
       }
     })
   }, []);
