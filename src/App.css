@@ -1,0 +1,41 @@
+.img-box {
+    height: 280px;
+    overflow: hidden;
+    transition: all .5s ease-in;
+}
+.container-fluid{
+    padding-bottom: 30px;
+    background-color: #8686c5;
+    border-radius: 10px;
+    font-family: harrington;
+    font-size: 17px;
+}
+ .card{
+    width:33.33%;
+    padding: 10px;
+    background-color:rgb(195, 203, 234);
+    }
+    .card-body{
+        border-radius: 10px;
+    }
+    .nav-link{
+        color: #f7f2f2;
+        
+    }
+    .navbar-brand{
+        color: #f7f2f2;
+    }
+    .card-title{
+        color:black;
+    }
+   .one:hover{
+    color:black;
+   }
+   .img-fluid{
+    border-top-left-radius: 30px;
+   }
+   .img-box:hover{
+    opacity: 70%;
+    cursor: pointer;
+
+   }
