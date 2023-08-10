@@ -11,7 +11,7 @@ function Home() {
 
   useEffect(() => {
 
-    axios.get("http://localhost:3003/students").then((res) => {
+    axios.get("https://studentapi-tawny.vercel.app/api/students").then((res) => {
       if (res.data.status == true) {
         setStudents(res.data.students);
       }
