@@ -12,7 +12,7 @@ function StudentDetails() {
 
     const handleDelete = () => {
         if (window.confirm("are you sure?") == true) {
-            axios.delete("http://localhost:3003/student-delete/" + id).then((res) => {
+            axios.delete("https://studentapi-tawny.vercel.app/api/student-delete/" + id).then((res) => {
                 if (res.data.status == true) {
                     alert("successfully deleted");
                     navigate("/");
@@ -23,7 +23,7 @@ function StudentDetails() {
 
 
     useEffect(() => {
-        axios.get("http://localhost:3003/student/" + id).then((res) => {
+        axios.get("https://studentapi-tawny.vercel.app/api/student/" + id).then((res) => {
             if (res.data.status == true) {
                 setStudent(res.data.student);
             }
